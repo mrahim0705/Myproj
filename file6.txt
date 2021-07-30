@@ -1,0 +1,1 @@
+New line added to file6.txt -> modified
