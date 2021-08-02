@@ -1,0 +1,1 @@
+New file added on git hub to test the pull command which is combination of fetch and merge. 
