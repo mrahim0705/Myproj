@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: true
+  become: true
+  tasks:
+    - yum:
+        name: bind-utils
+      when: ansible_os_family == "RedHat"
+    - apt:
+        name: dnsutils
+      when: ansible_os_family == "Debian"
