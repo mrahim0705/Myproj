@@ -1,0 +1,12 @@
+---
+ - name: Ansible archive Examples
+   user: mrahim
+   hosts: target1
+   tasks:
+    - name: Compress Directory contents
+      become: yes
+      archive:
+        path: /home/mrahim/AWX_Scripts/mustapha.txt
+        dest: /home/mrahim/AWX_Scripts/mustapha.zip
+        format: zip
+        remove: yes
