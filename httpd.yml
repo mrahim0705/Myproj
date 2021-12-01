@@ -1,5 +1,5 @@
 - name: Install Apache on CentOS
-  host: target1
+  host: all
   task:
     - yum: 
        name: httpd 
